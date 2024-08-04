@@ -4,7 +4,7 @@ var started = false;
 var level = 0;
 
 $(document).on('keypress', function(event){
-    if (event.key = 'a' && !started){
+    if (event.key === 'a' && !started){
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
